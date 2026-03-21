@@ -18,7 +18,7 @@ header {
 
 h1 {
     color: white;
-    background-color: #e74c3c;
+    background-color: #34495e;
     padding: 15px;
     border-radius: 5px;
 }
@@ -36,7 +36,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #e74c3c;
+    background-color: #34495e;
     padding: 5px 10px;
     border-radius: 3px;
 }
