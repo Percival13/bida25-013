@@ -1,35 +1,47 @@
-/* Body with colorful gradient background */
-body {
-  font-family: 'Poppins', sans-serif;
+/* Global reset */
+* {
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #f4f4f4, #e0f7fa, #fff3e0);
+  box-sizing: border-box;
+}
+
+/* Body with a strong logistics vibe */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #fff3e0);
   color: #333;
   line-height: 1.6;
 }
 
-/* Navigation bar with strong color contrast */
-nav {
-  background: linear-gradient(135deg, #111, #004d40);
+/* Header / Navigation */
+header {
+  background: linear-gradient(135deg, #004d40, #00796b);
   color: #fff;
-  padding: 15px 30px;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+/* Hero section */
+.hero {
+  background: url('truck-banner.jpg') center/cover no-repeat;
+  height: 350px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-
-nav a {
+  justify-content: center;
   color: #fff;
-  text-decoration: none;
-  margin: 0 15px;
-  transition: color 0.3s ease;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
 }
 
-nav a:hover {
-  color: #ffeb3b; /* bright accent */
+.hero h2 {
+  font-size: 2rem;
 }
 
-/* Card layout for services/products */
+/* Service cards */
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -38,7 +50,7 @@ nav a:hover {
 }
 
 .card {
-  background: linear-gradient(135deg, #ffffff, #e3f2fd);
+  background: #fff;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.1);
   padding: 20px;
@@ -50,7 +62,12 @@ nav a:hover {
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-/* Buttons with vibrant gradient */
+.card h3 {
+  color: #004d40;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
 button, .btn {
   display: inline-block;
   padding: 12px 20px;
@@ -68,9 +85,44 @@ button:hover, .btn:hover {
   box-shadow: 0 6px 15px rgba(255,111,97,0.5);
 }
 
-/* Fixed, colorful footer */
+/* Luxury application & feedback forms */
+form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  background: linear-gradient(135deg, #111, #2c3e50);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  color: #fff;
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #d4af37;
+  letter-spacing: 1px;
+}
+
+form input, form textarea, form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: #222;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+  border-color: #ff6f61;
+  box-shadow: 0 0 8px rgba(255,111,97,0.6);
+  outline: none;
+}
+
+/* Fixed colorful footer */
 footer {
-  position: fixed;       /* keeps footer locked at bottom */
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -96,7 +148,7 @@ footer a:hover {
   color: #111;
 }
 
-/* Prevent content overlap with fixed footer */
+/* Prevent overlap with fixed footer */
 main {
-  padding-bottom: 100px; /* adjust to footer height */
+  padding-bottom: 100px;
 }
