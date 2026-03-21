@@ -19,7 +19,7 @@ header {
 }
 
 header h1 {
-  color: #fff;
+  color: white;
   text-align: center;
   font-size: 2.5em;
   margin-bottom: 10px;
@@ -33,7 +33,7 @@ header p {
 
 /* Navigation Styles */
 nav {
-  background-color: #0033cc;
+  background-color: #001861;
   padding: 15px 0;
 }
 
@@ -54,7 +54,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ff0000;
+  color: #212020;
 }
 
 /* Main Content */
@@ -73,14 +73,14 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2.5em;
-  background-color: #000;
+  background-color: white;
   padding: 15px 20px;
   border-radius: 5px;
 }
 
 h2 {
   font-size: 2em;
-  background-color: #0033cc;
+  background-color: #001d75;
   padding: 12px 15px;
   border-radius: 5px;
 }
@@ -105,7 +105,7 @@ section {
 }
 
 .section-blue {
-  background-color: #0033cc;
+  background-color: #001d74;
   color: #fff;
 }
 
@@ -117,7 +117,7 @@ section {
 /* Cards */
 .card {
   background-color: #f9f9f9;
-  border-left: 4px solid #0033cc;
+  border-left: 4px solid #001f7d;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 5px;
