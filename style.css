@@ -7,7 +7,7 @@
 body {
     background-color:gray
     font-family: Arial, sans-serif;
-    color:#ccc;
+    color:gray;
 }
 
 header {
@@ -48,13 +48,18 @@ nav a:hover {
 }
 
 .card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 25px;
+  transition: transform 0.3s ease;
 }
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
 
 footer {
     position: fixed;
