@@ -57,9 +57,98 @@ nav a:hover {
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width:100%;
     background-color: #2c3e50;
     color: white;
-    text-align: center and bottom;
+    text-align: center;
     padding: 20px;
-    margin-top: 40px;
+    
+}
+/* General form container */
+form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #111; /* dark luxury background */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+/* Headings */
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #d4af37; /* gold accent */
+  letter-spacing: 1px;
+}
+
+/* Labels */
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #ccc;
+}
+
+/* Inputs & Textareas */
+form input, form textarea, form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: #222;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Hover & Focus effects */
+form input:focus, form textarea:focus, form select:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 8px rgba(212,175,55,0.6);
+  outline: none;
+}
+
+/* Buttons */
+form button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #d4af37, #b8860b);
+  border: none;
+  border-radius: 8px;
+  color: #111;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(212,175,55,0.5);
+}
+
+/* Feedback form extras */
+.feedback-rating {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.feedback-rating input {
+  display: none;
+}
+
+.feedback-rating label {
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.feedback-rating input:checked + label {
+  color: #d4af37;
 }
