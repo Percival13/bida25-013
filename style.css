@@ -96,37 +96,13 @@ form {
   color: #fff;
 }
 
-form h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #d4af37;
-  letter-spacing: 1px;
-}
-
-form input, form textarea, form select {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 18px;
-  border: 1px solid #444;
-  border-radius: 8px;
-  background: #222;
-  color: #fff;
-  transition: all 0.3s ease;
-}
-
-form input:focus, form textarea:focus, form select:focus {
-  border-color: #ff6f61;
-  box-shadow: 0 0 8px rgba(255,111,97,0.6);
-  outline: none;
-}
-
-/* Fixed colorful footer */
+/* Fixed footer */
 footer {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(135deg, #004d40, #d4af37, #ff6f61);
+  background: linear-gradient(135deg, #006064, #26c6da, #80deea); /* teal & aqua tones */
   color: #fff;
   text-align: center;
   padding: 15px 25px;
@@ -145,10 +121,71 @@ footer a {
 }
 
 footer a:hover {
-  color: #111;
+  color: #004d40; /* deep teal accent */
 }
 
 /* Prevent overlap with fixed footer */
 main {
-  padding-bottom: 100px;
+  padding-bottom: 100px; /* adjust to footer height */
+}
+
+/* Application Form - cool modern styling */
+form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff); /* light aqua gradient */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  color: #004d40;
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #006064;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #004d40;
+}
+
+form input, form textarea, form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #26c6da;
+  border-radius: 8px;
+  background: #f9f9f9;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+  border-color: #006064;
+  box-shadow: 0 0 8px rgba(0,96,100,0.4);
+  outline: none;
+}
+
+/* Attractive submit button */
+form button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #26c6da, #00acc1);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,172,193,0.5);
 }
