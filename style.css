@@ -5,13 +5,13 @@
 }
 
 body {
-    background-color: #111;
+    background-color: #222; /* dark luxury background */
     font-family: Arial, sans-serif;
     color:#ccc;
 }
 
 header {
-    background-color: #111; /* dark luxury background */ ;
+    background-color:mintcream
     padding: 20px;
     text-align: center;
 }
