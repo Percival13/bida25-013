@@ -1,21 +1,16 @@
-/* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body & Layout */
+ /* Body */
 body {
   font-family: 'Poppins', sans-serif;
-  background: #f4f4f4;
+  background: linear-gradient(135deg, #f4f4f4, #e0f7fa, #fff3e0);
   color: #333;
+  margin: 0;
+  padding: 0;
   line-height: 1.6;
 }
 
 /* Navigation Bar */
 nav {
-  background: #111;
+  background: linear-gradient(135deg, #111, #004d40);
   color: #fff;
   padding: 15px 30px;
   display: flex;
@@ -31,7 +26,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #d4af37; /* gold accent */
+  color: #ffeb3b; /* bright yellow accent */
 }
 
 /* Hero Section */
@@ -50,7 +45,7 @@ nav a:hover {
   letter-spacing: 2px;
 }
 
-/* Card Boxes for Services */
+/* Card Boxes */
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -59,7 +54,7 @@ nav a:hover {
 }
 
 .card {
-  background: #fff;
+  background: linear-gradient(135deg, #ffffff, #e3f2fd);
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.1);
   padding: 20px;
@@ -72,7 +67,7 @@ nav a:hover {
 }
 
 .card h3 {
-  color: #111;
+  color: #004d40;
   margin-bottom: 10px;
 }
 
@@ -84,7 +79,7 @@ nav a:hover {
 button, .btn {
   display: inline-block;
   padding: 12px 20px;
-  background: linear-gradient(135deg, #d4af37, #b8860b);
+  background: linear-gradient(135deg, #d4af37, #ff6f61);
   border: none;
   border-radius: 8px;
   color: #111;
@@ -95,15 +90,15 @@ button, .btn {
 
 button:hover, .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(212,175,55,0.5);
+  box-shadow: 0 6px 15px rgba(255,111,97,0.5);
 }
 
-/* Luxury Application & Feedback Forms */
+/* Luxury Forms */
 form {
   max-width: 600px;
   margin: 40px auto;
   padding: 25px;
-  background: #111;
+  background: linear-gradient(135deg, #111, #2c3e50);
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.4);
   color: #fff;
@@ -114,13 +109,6 @@ form h2 {
   margin-bottom: 20px;
   color: #d4af37;
   letter-spacing: 1px;
-}
-
-form label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: 500;
-  color: #ccc;
 }
 
 form input, form textarea, form select {
@@ -135,12 +123,12 @@ form input, form textarea, form select {
 }
 
 form input:focus, form textarea:focus, form select:focus {
-  border-color: #d4af37;
-  box-shadow: 0 0 8px rgba(212,175,55,0.6);
+  border-color: #ff6f61;
+  box-shadow: 0 0 8px rgba(255,111,97,0.6);
   outline: none;
 }
 
-/* Feedback Rating (Stars) */
+/* Feedback Rating */
 .feedback-rating {
   display: flex;
   justify-content: space-around;
@@ -161,11 +149,35 @@ form input:focus, form textarea:focus, form select:focus {
   color: #d4af37;
 }
 
-/* Footer */
+/* Fixed, Colorful Footer */
 footer {
-  background: #111;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #004d40, #d4af37, #ff6f61);
   color: #fff;
   text-align: center;
-  padding: 15px;
-  margin-top: 40px;
+  padding: 15px 25px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #111;
+}
+
+/* Prevent content overlap with fixed footer */
+main {
+  padding-bottom: 100px; /* adjust to footer height */
 }
