@@ -1,14 +1,14 @@
- /* Body */
+/* Body with colorful gradient background */
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #f4f4f4, #e0f7fa, #fff3e0);
-  color: #333;
   margin: 0;
   padding: 0;
+  background: linear-gradient(135deg, #f4f4f4, #e0f7fa, #fff3e0);
+  color: #333;
   line-height: 1.6;
 }
 
-/* Navigation Bar */
+/* Navigation bar with strong color contrast */
 nav {
   background: linear-gradient(135deg, #111, #004d40);
   color: #fff;
@@ -26,26 +26,10 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffeb3b; /* bright yellow accent */
+  color: #ffeb3b; /* bright accent */
 }
 
-/* Hero Section */
-.hero {
-  background: url('logistics-banner.jpg') center/cover no-repeat;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
-}
-
-.hero h1 {
-  font-size: 3rem;
-  letter-spacing: 2px;
-}
-
-/* Card Boxes */
+/* Card layout for services/products */
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -66,16 +50,7 @@ nav a:hover {
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-.card h3 {
-  color: #004d40;
-  margin-bottom: 10px;
-}
-
-.card p {
-  color: #555;
-}
-
-/* Buttons */
+/* Buttons with vibrant gradient */
 button, .btn {
   display: inline-block;
   padding: 12px 20px;
@@ -93,65 +68,9 @@ button:hover, .btn:hover {
   box-shadow: 0 6px 15px rgba(255,111,97,0.5);
 }
 
-/* Luxury Forms */
-form {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 25px;
-  background: linear-gradient(135deg, #111, #2c3e50);
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-  color: #fff;
-}
-
-form h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #d4af37;
-  letter-spacing: 1px;
-}
-
-form input, form textarea, form select {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 18px;
-  border: 1px solid #444;
-  border-radius: 8px;
-  background: #222;
-  color: #fff;
-  transition: all 0.3s ease;
-}
-
-form input:focus, form textarea:focus, form select:focus {
-  border-color: #ff6f61;
-  box-shadow: 0 0 8px rgba(255,111,97,0.6);
-  outline: none;
-}
-
-/* Feedback Rating */
-.feedback-rating {
-  display: flex;
-  justify-content: space-around;
-  margin: 15px 0;
-}
-
-.feedback-rating input {
-  display: none;
-}
-
-.feedback-rating label {
-  font-size: 24px;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.feedback-rating input:checked + label {
-  color: #d4af37;
-}
-
-/* Fixed, Colorful Footer */
+/* Fixed, colorful footer */
 footer {
-  position: fixed;
+  position: fixed;       /* keeps footer locked at bottom */
   bottom: 0;
   left: 0;
   width: 100%;
