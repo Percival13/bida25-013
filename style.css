@@ -7,7 +7,7 @@
 body {
     background-color:gray
     font-family: Arial, sans-serif;
-    color:gray;
+    color: #fff;
 }
 
 header {
@@ -18,7 +18,7 @@ header {
 
 h1 {
     color: white;
-    background-color:  #111; /* dark luxury background */;
+    background-color: #34495e
     padding: 15px;
     border-radius: 5px;
 }
