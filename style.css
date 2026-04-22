@@ -85,6 +85,20 @@ button:hover, .btn:hover {
   box-shadow: 0 6px 15px rgba(255,111,97,0.5);
 }
 
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul.hidden {
+  display: none;
+}
+
 button {
   padding: 10px 20px;
   margin: 10px;
