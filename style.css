@@ -150,7 +150,7 @@ form {
 }
 
 .overlay-text {
-  position: absolute;   /* position relative to the container */
+  position: top;   /* position relative to the container */
   top: 50%;             /* vertical placement */
   left: 50%;            /* horizontal placement */
   transform: translate(-50%, -50%); /* center the text */
