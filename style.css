@@ -139,6 +139,30 @@ form {
   color: #fff;
 }
 
+.image-container {
+  position: relative;   /* allows child elements to be positioned inside */
+  display: inline-block;
+}
+
+.image-container img {
+  width: 100%;          /* make image responsive */
+  height: auto;
+}
+
+.overlay-text {
+  position: absolute;   /* position relative to the container */
+  top: 50%;             /* vertical placement */
+  left: 50%;            /* horizontal placement */
+  transform: translate(-50%, -50%); /* center the text */
+  color: white;         /* text color */
+  font-size: 24px;      /* adjust size */
+  font-weight: bold;
+  background: rgba(0,0,0,0.5); /* semi-transparent background for readability */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
 /* Fixed footer */
 footer {
   position: fixed;
