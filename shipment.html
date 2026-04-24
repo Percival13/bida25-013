@@ -28,14 +28,36 @@
 
 
     <main>
-        <h2>Track Your Shipment</h2>
-        <p>Enter your tracking number below to view the status of your shipment:</p>
+      <!-- Tracking Number Form -->
+<form id="trackingForm">
+  <label for="trackingNumber">Enter Tracking Number:</label>
+  <input type="text" id="trackingNumber" name="trackingNumber" required>
+  <button type="submit">Track</button>
+  <p id="trackingError" style="color:red; display:none;"></p>
+</form>
 
-        <form action="#" method="get">
-            <label for="tracking-number">Tracking Number:</label>
-            <input type="text" id="tracking-number" name="tracking-number" required>
-            <button type="submit">Track Shipment</button>
-        </form>
+<script>
+// Tracking number validation
+document.getElementById("trackingForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Stop form from submitting
+
+    const trackingInput = document.getElementById("trackingNumber").value.trim();
+    const errorElement = document.getElementById("trackingError");
+
+    // Regex: letters & numbers only, length 8–15
+    const trackingPattern = /^[A-Za-z0-9]{8,15}$/;
+
+    if (!trackingPattern.test(trackingInput)) {
+        errorElement.textContent = "❌ Invalid tracking number. Please enter 8–15 letters/numbers only.";
+        errorElement.style.display = "block";
+    } else {
+        errorElement.style.display = "none";
+        alert("✅ Tracking number accepted. Processing...");
+        // Here you can redirect or fetch tracking info
+    }
+});
+</script>
+
     </main>
 
     <footer>
