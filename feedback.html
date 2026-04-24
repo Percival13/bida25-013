@@ -27,11 +27,24 @@
 <main>
     <p>We value your feedback! Please share your thoughts, suggestions, or concerns about our services.</p>
 </main>
-<form>
-    <label for="feedback">Your Feedback:</label><br>
-    <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Enter your feedback here..."></textarea><br>
-    <button type="submit">Submit Feedback</button>
+<!-- Feedback Form -->
+<form id="feedbackForm">
+  <label for="feedback">Your Feedback:</label><br>
+  <textarea id="feedback" name="feedback" rows="4" cols="40" required></textarea><br>
+  <button type="submit">Submit Feedback</button>
+  <p id="feedbackMessage" style="color:green; display:none;"></p>
 </form>
+
+<script>
+  document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    // Here you can add code to send the feedback to a server or process it as needed
+    document.getElementById('feedbackMessage').textContent = 'Thank you for your feedback!';
+    document.getElementById('feedbackMessage').style.display = 'block';
+    this.reset(); // Reset the form after submission
+  });
+</script>
+
 </body>
 <footer>
         <p>&copy; 2026 Percival Logistics. All rights reserved.</p>
