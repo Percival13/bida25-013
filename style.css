@@ -268,3 +268,12 @@ form button:hover {
 #navMenu.active {
   display: block;  /* shows the menu */
 }
+
+#toggleMenu {
+  display: inline-block;   /* ensures it shows */
+  padding: 10px 15px;
+  background: #007bff;     /* blue background */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
