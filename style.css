@@ -261,7 +261,7 @@ form button:hover {
 
 /* Default state: menu hidden */
 #navMenu {
-  display: none;   /* hides the menu */
+  display: inline-block;   /* hides the menu */
 }
 
 /* When JS adds .active, show the menu */
