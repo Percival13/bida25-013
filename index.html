@@ -12,7 +12,7 @@
         <p>Driving Logistics forward with speed and precision!</p>
     </header>
 
-    <nav id="navMenu">
+    <nav id="navMenu" class="hidden">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
@@ -25,18 +25,20 @@
     <button id="toggleMenu">Toggle Menu</button>
  </nav>  
 
+
+<!-- Click Me button -->
 <button id="clickMe">Click Me</button>
 
-  <!-- Modal -->
-  <div id="announcementModal" class="modal">
-    <div class="modal-content">
-      <span id="closeModal">&times;</span>
-      <h2>Company Announcement</h2>
-      <p>We are expanding our fleet this summer!</p>
-    </div>
+<!-- Show Announcement button -->
+<button id="showAnnouncement">Show Announcement</button>
+<div id="announcementModal" style="display:none;">
+  <div class="modal-content">
+    <h2>Company Announcement</h2>
+    <p>🚚 We are expanding our fleet this summer!</p>
+    <button id="closeAnnouncement">Close</button>
   </div>
+</div>
 
-  <button id="openModal">Show Announcement</button>
 
     <main>
         <h2>Welcome to Percival Logistics</h2>
