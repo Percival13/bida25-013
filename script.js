@@ -1,18 +1,3 @@
-// Button color toggle
-const colorButton = document.getElementById("colorButton");
-let isBlue = false;
-
-colorButton.addEventListener("click", () => {
-  if (isBlue) {
-    colorButton.style.backgroundColor = "green";
-    colorButton.style.color = "white";
-  } else {
-    colorButton.style.backgroundColor = "blue";
-    colorButton.style.color = "white";
-  }
-  isBlue = !isBlue;
-});
-
 document.addEventListener("DOMContentLoaded", () => {
     // Click Me button
     const clickBtn = document.getElementById("clickMe");
@@ -22,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Toggle menu
+    // Toggle menu button
     const toggleBtn = document.getElementById("toggleMenu");
     const navMenu = document.getElementById("navMenu");
     if (toggleBtn && navMenu) {
@@ -31,12 +16,20 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Show announcement
+    // Show announcement button
     const announcementBtn = document.getElementById("showAnnouncement");
     const announcementModal = document.getElementById("announcementModal");
+    const closeBtn = document.getElementById("closeAnnouncement");
+
     if (announcementBtn && announcementModal) {
         announcementBtn.addEventListener("click", () => {
             announcementModal.style.display = "block";
+        });
+    }
+
+    if (closeBtn && announcementModal) {
+        closeBtn.addEventListener("click", () => {
+            announcementModal.style.display = "none";
         });
     }
 });
