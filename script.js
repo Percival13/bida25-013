@@ -13,29 +13,30 @@ colorButton.addEventListener("click", () => {
   isBlue = !isBlue;
 });
 
-// Dynamic navigation menu toggle
-const toggleMenu = document.getElementById("toggleMenu");
-const navMenu = document.querySelector("#navMenu ul");
+document.addEventListener("DOMContentLoaded", () => {
+    // Click Me button
+    const clickBtn = document.getElementById("clickMe");
+    if (clickBtn) {
+        clickBtn.addEventListener("click", () => {
+            alert("You clicked the button!");
+        });
+    }
 
-toggleMenu.addEventListener("click", () => {
-  navMenu.classList.toggle("hidden");
-});
+    // Toggle menu
+    const toggleBtn = document.getElementById("toggleMenu");
+    const navMenu = document.getElementById("navMenu");
+    if (toggleBtn && navMenu) {
+        toggleBtn.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+        });
+    }
 
-// Modal popup
-const modal = document.getElementById("announcementModal");
-const openModal = document.getElementById("openModal");
-const closeModal = document.getElementById("closeModal");
-
-openModal.addEventListener("click", () => {
-  modal.style.display = "block";
-});
-
-closeModal.addEventListener("click", () => {
-  modal.style.display = "none";
-});
-
-window.addEventListener("click", (event) => {
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
+    // Show announcement
+    const announcementBtn = document.getElementById("showAnnouncement");
+    const announcementModal = document.getElementById("announcementModal");
+    if (announcementBtn && announcementModal) {
+        announcementBtn.addEventListener("click", () => {
+            announcementModal.style.display = "block";
+        });
+    }
 });
