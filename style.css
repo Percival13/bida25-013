@@ -259,16 +259,6 @@ form button:hover {
   box-shadow: 0 6px 15px rgba(0,172,193,0.5);
 }
 
-/* Default state: menu hidden */
-#navMenu {
-  display: inline-block;   /* hides the menu */
-}
-
-/* When JS adds .active, show the menu */
-#navMenu.active {
-  display: block;  /* shows the menu */
-}
-
 #toggleMenu {
   display: inline-block;   /* ensures it shows */
   padding: 10px 15px;
