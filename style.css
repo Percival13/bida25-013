@@ -262,7 +262,7 @@ form button:hover {
 #toggleMenu {
   display: inline-block;   /* ensures it shows */
   padding: 10px 15px;
-  background: #007bff;     /* blue background */
+  background: #26c6da;     /* blue background */
   color: white;
   border: none;
   cursor: pointer;
