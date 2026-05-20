@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const clickBtn = document.getElementById("clickMe");
     if (clickBtn) {
         clickBtn.addEventListener("click", () => {
-            alert("You clicked the button!");
+            alert("Welcome To Percival Trucking!");
         });
     }
 
